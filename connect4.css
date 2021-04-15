@@ -1,0 +1,137 @@
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+	position: relative;
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+	border-radius: 50%;
+	animation: slidein;
+  animation-duration: .2s;
+}
+
+.piece._0 {
+	animation: slidein0;
+  animation-duration: .25s;
+}
+
+.piece._1 {
+	animation: slidein1;
+  animation-duration: .3s;
+}
+
+.piece._2 {
+	animation: slidein2;
+  animation-duration: .35s;
+}
+
+.piece._3 {
+	animation: slidein3;
+  animation-duration: .4s;
+}
+
+.piece._4 {
+	animation: slidein4;
+  animation-duration: .45s;
+}
+
+.piece._5 {
+	animation: slidein5;
+  animation-duration: .5s;
+}
+
+@keyframes slidein0 {
+	from {
+    top: -45px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slidein1 {
+	from {
+    top: -100px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slidein2 {
+	from {
+    top: -155px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slidein3 {
+	from {
+    top: -210px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slidein4 {
+	from {
+    top: -265px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slidein5 {
+	from {
+    top: -320px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slidein {
+	from {
+    top: -500px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+/* .piece.p1 {
+	background-color: red;
+}
+
+.piece.p2 {
+  background-color: blue;
+} */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
