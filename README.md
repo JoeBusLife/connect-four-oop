@@ -1,1 +1,3 @@
 # connect-four-oop
+## Final version with moves stopped after game over, new game button, player color selection, dropping pieces animation
+### more css could be added if I cared to...
